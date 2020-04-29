@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHRAM SEVA</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="bg-image">
+            
+        </div>
+        <div class="navbar">
+            <div class="navbar-content">
+                <img src="1.jpg">
+            </div>
+        </div>
+        <form action="">
+			<table>
+				<lable id="name">Name</lable>
+				<input type="text" class="fi" placeholder="Enter name" name="name"><br>
+				<lable id="ph">Phone-no</lable>
+				<input type="number" class="mobile-no" placeholder="Enter phone no" name="mobile"><br>
+				<lable id="proof">Choose the ID-proof</lable>
+				<select id="id" name="idproof">
+  					<option value="aadhaar">Aadhaar Card</option>
+  					<option value="Pan">Pan Card</option>
+  					<option value="voter">Voter Id</option>
+  					<option value="ration">Ration Card</option>
+				</select>
+				<input type="text" id="proofid" placeholder="Enter the ID proof" name="idproofs"><br>
+				<lable id="age">Age</lable>
+				<input type="number" class="ageverif" placeholder="Enter your age" name="ageperson"><br>
+                <input type="submit" onclick="signup()" id="formsub" name="submit">
+                <span class="quote-part" data-text="Help them hey need you" data-hover="Help them they need you ">Help them they need you</span>
+            </table>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

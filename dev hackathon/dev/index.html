@@ -1,0 +1,164 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="navbar-content">
+                <div class="navbar-left">
+                    <div class="navbar-left-content">
+                        <h1>SHRAM SEVA</h1>
+                    </div>
+                </div>
+                
+                <div class="navbar-right">
+                    <div class="navbar-right-content">
+                        <ul class="menu">
+                            <li class="donate">
+                                <a href="#">
+                                Donate</a>
+                            </li>
+                            <li class="about">
+                                <a href="#donate_about_needs">
+                                About</a>
+                            </li>
+                            <li class="info">
+                                <a href="#">
+                                Informatiom</a>
+                            </li>
+                            <li class="enquiry">
+                                <a href="#enquiries">
+                                Enquiry</a>
+                            </li>
+                            <li class="suggestion">
+                                <a href="#">
+                                Suggestion</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="quotes">
+            <div class="quotes_content">
+                <h1 class="hindi">एक 
+                    दान
+                    गरीब,
+                    फंसे
+                    मजदूरों
+                    के नाम
+                    
+                </h1>
+                <h1 class="english">A donation for the name of trapped poor peoples</h1>
+            </div>
+        </div>
+        <div class="donateform">
+            <div class="donateform-content">
+                <div class="slideshow-left">
+                    <div class="leftpart-photos">
+                        <div id="slider">
+                            <figure>
+                                <img src="slideshow1.1.jpg">
+                                <img src="slideshow1.2.jfif">
+                                <img src="slideshow1,3.jfif">
+                                <img src="slideshow1.4.jfif">
+                                <img src="slideshow1.5.jpg">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="leftside_quote">
+                        <div class="leftside_quotes content_quotes">
+                            <h1>Your small donation will save a life</h1>
+                            <h1>आपका छोटा दान एक जीवन बचा सकता है</h1>
+                            <a href="payment.html">
+                                <button id="dona">Donate Now</button>
+                            </a>    
+                            <h3>Thank you for your help</h3>
+                            <h3>आपके सहयोग के लिए धन्यवाद</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="donateform_right">
+                    <form id="donation">
+                        <table>
+                            <label>Name</label>
+                            <input type="text" id="name"  placeholder="Enter your name"><br>
+                            <label>City</label>
+                            <input type="text" id="city" placeholder="Enter your city"><br>
+                            <label>DOB</label>
+                            <input type="date" id="name"><br>
+                            <label id="payment" >Choose Payment mode<sup>*</sup></label>
+				            <select id="id" name="idproof" required>
+  					            <option value="aadhaar">Paytm</option>
+  					            <option value="Pan">BHIM</option>
+  					            <option value="voter">Phone pay</option>
+  					            <option value="ration">Debit card</option>
+                            </select>
+                            <a id="pays" href="payment.html">
+                                <button id="payment-gateway">GO TO PAYMENT PAGE</button>
+                            </a>
+                            <p id="note">Note * marked feilds are compulsory</p>
+                        </table>
+                    </form>
+                    <div class="rightpart-photos">
+                        <div id="slider">
+                            <figure>
+                                <img src="slideshow2.1.jfif">
+                                <img src="slideshow2.2.webp">
+                                <img src="slideshow2.3.jfif">
+                                <img src="slideshow2.4.jfif">
+                                <img src="slideshow2.5.jfif">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about_donation" id="donate_about_needs">
+            <div class="about_donation_content">
+                <div class="this_section_heading" >
+                    <h1>ABOUT</h1>
+                </div>
+                <ul class="donate_about_list">
+                    <li>This Application is work under the guidence of Indian Goverment. There is envolment of small private sector which will ensure your money is in safe hands and is spend on the needs of right peoples</li>
+                    <li>Be assure there will be no corruption , as their is transpancy in the system</li>
+                    <li>This application is running on your donation and funded by Indian Goverment</li>
+                    <li>This application is more made for earning process.So least of money is spent on maintainence</li>
+                </ul>
+                <div class="one_more_quote">
+                    <div class="one_more_quote_content">
+                        <h3>More than 92.5 percent of migrant workers have lost up to three weeks of work due to the current lockdown, over a million workers are in relief camps, while around half a million have walked back to their homes.</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="enquiry_form" id="enquiries">
+            <div class="enquiry_content">
+               <div class="enquiry_photos">
+                   <img src="enquiry.jpg">
+               </div>
+               <h1 class="enq">ENQUIRY</h1>
+               <form class="enquiry_details">
+                   <table class="enquiry_table">
+                        <lable class="enquiry1" style="font-size:30;">Name</lable>
+                        <input type="text" id="enquiry_name" required>
+                        <lable id="enquiry2" style="font-size: 30;">DOB</lable>
+                        <input type="date" id="enquiry_dob">
+                        <lable id="enquiry3" style="font-size: 30;">Email-id</lable>
+                        <input type="email" id="enquiry_email" required>
+                        <lable id="enquiry4" style="font-size: 30;">Query</lable>
+                        <input type="textbox" id="enquiry_query" required>
+                        <button class="query_submit" onclick="enquiry()">Submit</button>
+                        <p style="font-size: 12;color:white;">You can also submit any suggestion</p>
+                   </table>
+               </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
